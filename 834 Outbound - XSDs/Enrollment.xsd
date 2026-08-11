@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+	targetNamespace="http://MMM_Membership_QNXT_EHub_LIB/X12/X220A1"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:bons0="http://MMM_Membership_QNXT_EHub_LIB/X12/X220A1">
+	<xsd:include schemaLocation="HealthRef.xsd"></xsd:include>
+	<xsd:include schemaLocation="Provs.xsd"></xsd:include>
+	<xsd:include schemaLocation="HealthDt.xsd"></xsd:include>
+
+
+	<xsd:include schemaLocation="HD.xsd"></xsd:include>
+	<xsd:complexType name="Enrollment">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="HealthData"
+				type="bons0:HD">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="HealthDt"
+				type="bons0:HealthDt" maxOccurs="1">
+			</xsd:element>
+
+			<xsd:element minOccurs="0" name="HealthRef"
+				type="bons0:HealthRef">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Provs" type="bons0:Provs"
+				maxOccurs="1">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

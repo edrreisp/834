@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+	targetNamespace="http://MMM_Membership_QNXT_EHub_LIB/X12/X220A1"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="LX">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="AssignId"
+				type="xsd:integer">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

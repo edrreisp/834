@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+	targetNamespace="http://MMM_Membership_QNXT_EHub_LIB/X12/X220A1"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="N4">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="City" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="State" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="Zipcode"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="LocationQual"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="LocationId"
+				type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

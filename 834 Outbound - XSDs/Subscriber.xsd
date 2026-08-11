@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+	targetNamespace="http://MMM_Membership_QNXT_EHub_LIB/X12/X220A1"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:bons0="http://MMM_Membership_QNXT_EHub_LIB/X12/X220A1">
+	<xsd:include schemaLocation="DMG.xsd"></xsd:include>
+	<xsd:include schemaLocation="N4.xsd"></xsd:include>
+	<xsd:include schemaLocation="N3.xsd"></xsd:include>
+	<xsd:include schemaLocation="PER.xsd"></xsd:include>
+	<xsd:include schemaLocation="NM1.xsd"></xsd:include>
+	<xsd:complexType name="Subscriber">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="Name" type="bons0:NM1"></xsd:element>
+			<xsd:element minOccurs="0" name="Comm" type="bons0:PER"></xsd:element>
+			<xsd:element minOccurs="0" name="PartyLocation"
+				type="bons0:N3">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="GeoLocation"
+				type="bons0:N4">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Demographic"
+				type="bons0:DMG">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

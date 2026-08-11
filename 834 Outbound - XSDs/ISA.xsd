@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+	targetNamespace="http://MMM_Membership_QNXT_EHub_LIB/X12/X220A1"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="ISA">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="CtrlId"
+				type="xsd:integer">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="AuthInfoQual"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="AuthInfo"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="SecInfoQual"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="SecInfo"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="SenderQual"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="SenderId"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="RecQual"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="RecId" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="Date" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="Time" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="CtrlVer"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="AckReq"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="UsageInd"
+				type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

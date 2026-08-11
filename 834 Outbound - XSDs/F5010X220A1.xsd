@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+	targetNamespace="http://MMM_Membership_QNXT_EHub_LIB/X12/X220A1"
+	xmlns:bons0="http://MMM_Membership_QNXT_EHub_LIB/X12/X220A1"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:include schemaLocation="SubHD.xsd"></xsd:include>
+	<xsd:include schemaLocation="SubDtl.xsd"></xsd:include>
+	<xsd:include schemaLocation="SubRef.xsd"></xsd:include>
+	<xsd:include schemaLocation="SubDt.xsd"></xsd:include>
+
+
+
+
+	<xsd:include schemaLocation="INS.xsd" />
+
+
+
+	<xsd:complexType name="F5010X220A1">
+		<xsd:sequence>
+
+
+
+
+			<xsd:element minOccurs="0" name="SubHeader"
+				type="bons0:INS">
+			</xsd:element>
+
+			<xsd:element minOccurs="0" name="SubRef" type="bons0:SubRef"
+				maxOccurs="1">
+			</xsd:element>
+			<xsd:element maxOccurs="1" minOccurs="0" name="SubDt"
+				type="bons0:SubDt">
+			</xsd:element>
+
+			<xsd:element maxOccurs="1" minOccurs="0" name="SubDtl"
+				type="bons0:SubDtl">
+			</xsd:element>
+			<xsd:element maxOccurs="1" minOccurs="0" name="SubHD"
+				type="bons0:SubHD">
+			</xsd:element>
+
+
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+	targetNamespace="http://MMM_Membership_QNXT_EHub_LIB/X12/X220A1"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="PLA">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="ActionCd"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="EntIdCd"
+				type="xsd:string">
+			</xsd:element>
+			<xsd:element minOccurs="0" name="Date" type="xsd:string"></xsd:element>
+			<xsd:element minOccurs="0" name="ReasonCd"
+				type="xsd:string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
